@@ -1,4 +1,4 @@
-Attribute VB_Name = "Module2"
+
 Private Sub CommandButton3_Click()
 Unload UserForm1
 End Sub
@@ -160,7 +160,7 @@ End If
 End Sub
 Private Sub TextBox6_AfterUpdate()
 If IsNumeric(Me.TextBox6.Value) Then
-        Me.TextBox6.Value = Format(Me.TextBox6.Value, "€#,##0.00")
+        Me.TextBox6.Value = Format(Me.TextBox6.Value, "â‚¬#,##0.00")
     Else
         MsgBox "Please enter a valid number in Number Format."
         Me.TextBox6.Value = ""
